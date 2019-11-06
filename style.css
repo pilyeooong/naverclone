@@ -4,6 +4,24 @@ a{
 ul{
     list-style: none;
 }
+.search-keyboard {
+    position: absolute;
+    top:19px;
+    left:420px;
+	background: url('imgs/sp_search.png') no-repeat -33px -60px;
+	width: 19px;
+	height: 11px;
+}
+.search-arrow {
+    position: absolute;
+    top:23px;
+    left:452px;
+	background: url('imgs/sp_search.png') no-repeat -87px -60px;
+	width: 9px;
+	height: 4px;
+}
+
+
 .navbar-mail {
 	background: url('imgs/sp_nav.png') no-repeat 0 99.65%;
 	width: 25px;
@@ -91,7 +109,13 @@ ul{
 	height: 15px;
 }
 /* ------------------------------------------------------------------------------ */
+.wrapper{
+    position: relative;
+    background-color: #f2f4f7;
+    height:2000px;
+}
 .header{
+    background-color: #fff;
     border: 1px solid #d1d8e4;
 }
 .header-area{
@@ -122,8 +146,26 @@ ul{
 }
 .area-link a{
     color: #888;
-    font-size: 13px;
-    padding-right: 4px;
+    /* margin-top: 5px; */
+    font-size: 11px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    padding-right: 6px;
+}
+.area-link a:nth-child(1){
+    margin-right: 6px;
+}
+.area-link a:nth-child(1)::after{
+    position: absolute;
+    top:17px;
+    right:287px;
+    content:"";
+    width:1px;
+    height:11px;
+    background-color: #ebeef3;
+}
+.area-link a:nth-child(2){
+    margin-left: 4px;
 }
 .search-box{
     border: 2px solid #03cf5d;
@@ -221,12 +263,53 @@ ul{
     font-size: 15px;
 }
 
+/* ------------------------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
+.container{
+    position: relative;
+    margin:0 auto;
+    width:1080px;
+    padding-top: 10px;
+    
+}
+.row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.col{
+    background-color: lightblue;
+}
+.advertise{
+    width:740px;
+    height:120px;
+    background-color: yellowgreen;
+}
+.yeonhap{
+    margin-top: 10px;
+    width:740px;
+    height:46px;
+    background-color: tomato;
+}
+.newsstand{
+    margin-top: 10px;
+    width:740px;
+    height:246px;
+    background-color: wheat;
+}
+.weather{
+    position: absolute;
+    top:140px;
+    right:0px;
+    width:332px;
+    height: 142px;
+    background-color: lightgray;
+}
+.ad{
+    position: absolute;
+    top:290px;
+    right:0;
+    width:332px;
+    height:151.5px;
+    background-color: lightseagreen;
+}
