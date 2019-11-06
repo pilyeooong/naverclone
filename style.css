@@ -1,0 +1,232 @@
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.navbar-mail {
+	background: url('imgs/sp_nav.png') no-repeat 0 99.65%;
+	width: 25px;
+	height: 15px;
+}
+.navbar-cafe {
+	background: url('imgs/sp_nav.png') no-repeat 99.643% 18.118%;
+	width: 26px;
+	height: 14px;
+}
+.navbar-blog {
+	background: url('imgs/sp_nav.png') no-repeat 37.594% 63.636%;
+	width: 40px;
+	height: 15px;
+}
+.navbar-knowledge {
+	background: url('imgs/sp_nav.png') no-repeat 37.828% 54.545%;
+	width: 39px;
+	height: 15px;
+}
+.navbar-shopping {
+	background: url('imgs/sp_nav.png') no-repeat 99.288% 54.545%;
+	width: 25px;
+	height: 15px;
+}
+.navbar-pay {
+	background: url('imgs/sp_nav.png') no-repeat 24.911% 100%;
+	width: 25px;
+	height: 15px;
+}
+.navbar-tv {
+	background: url('imgs/sp_nav.png') no-repeat 45.62% 45.645%;
+	width: 32px;
+	height: 14px;
+}
+.navbar-dict {
+	background: url('imgs/sp_nav.png') no-repeat 99.643% 72.474%;
+	width: 26px;
+	height: 14px;
+}
+
+.navbar-news {
+	background: url('imgs/sp_nav.png') no-repeat 46.043% 36.237%;
+	width: 28px;
+	height: 14px;
+}
+.navbar-financial {
+	background: url('imgs/sp_nav.png') no-repeat 12.857% 90.559%;
+	width: 26px;
+	height: 15px;
+}
+.navbar-estate {
+	background: url('imgs/sp_nav.png') no-repeat 56.767% 54.545%;
+	width: 40px;
+	height: 15px;
+}
+.navbar-map {
+	background: url('imgs/sp_nav.png') no-repeat 100% 45.296%;
+	width: 26px;
+	height: 14px;
+}
+.navbar-movie {
+	background: url('imgs/sp_nav.png') no-repeat 83.871% 81.469%;
+	width: 27px;
+	height: 15px;
+}
+.navbar-music {
+	background: url('imgs/sp_nav.png') no-repeat 25.714% 90.244%;
+	width: 26px;
+	height: 14px;
+}
+.navbar-book {
+	background: url('imgs/sp_nav.png') no-repeat 47.782% 27.273%;
+	width: 13px;
+	height: 15px;
+}
+.navbar-webtoon {
+	background: url('imgs/sp_nav.png') no-repeat 100% 0;
+	width: 27px;
+	height: 15px;
+}
+.navbar-more {
+	background: url('imgs/sp_nav.png') no-repeat 0 36.364%;
+	width: 55px;
+	height: 15px;
+}
+/* ------------------------------------------------------------------------------ */
+.header{
+    border: 1px solid #d1d8e4;
+}
+.header-area{
+    position: relative;
+    height:130px;
+}
+.area-flex{
+    margin: 0 auto;
+    width:1080px;
+    height:100%;
+}
+.area-logo{
+    position: absolute;
+    top:30%;
+    background: url('imgs/sp_search.png') no-repeat 50% 10.811%;
+    width: 198px;
+    height: 48px;
+}
+.area-search{
+    position: absolute;
+    top:35%;
+    left:400px;
+}
+.area-link{
+    display:flex;
+    justify-content: flex-end;
+    padding:11px 0;
+}
+.area-link a{
+    color: #888;
+    font-size: 13px;
+    padding-right: 4px;
+}
+.search-box{
+    border: 2px solid #03cf5d;
+    width:470px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+}
+.search-text{
+    margin: 12px 0 0 9px;
+    border:0;
+    width:405px;
+}
+.search-btn{
+    position: absolute;
+    top:0;
+    right:-49px;
+    width:49px;
+    height:49px;
+    border:0;
+    background-color: #03cf5d;
+}
+.btn-img {
+    position: absolute;
+    top:14px;
+    right:15.5px;
+	background: url('imgs/sp_search.png') no-repeat 2.162% 93.75%;
+	width: 21px;
+	height: 21px;
+}
+
+.header-navbar{
+    height:46px;
+    border-top: 1px solid #f1f3f6;
+    display:flex;
+    align-items: center;
+}
+.navbar-area{
+    position: relative;
+    margin: 0 auto;
+    width:1080px;
+    display:flex;
+    /* justify-content: space-around; */
+}
+.navbar-menu{
+    display:flex;
+}
+.header-navbar span:nth-child(1){
+    /* margin-right: 14px; */
+    padding-left: 0;
+}
+.header-navbar span:nth-child(3){
+    padding-left: 18px;
+}
+
+.navbar-menu .item{
+    padding-left: 15px;
+}
+.navbar-menu .item:nth-child(1){
+    padding-left: 0;
+}
+.navbar-menu .item:nth-child(17){
+    padding-left: 28px;
+}
+.navbar-menu .item:nth-child(17)::after{
+    position: absolute;
+    top:2px;
+    right:390px;
+    content: "";
+    height:13px;
+    width:1px;
+    background-color: #ebeef3;
+}
+
+.navbar-rank{
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+}
+.rank{
+    display: flex;
+    width:60%;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.rank-item{
+    margin-right: 105px;
+}
+
+.rank-item span{
+   color: #03cf5d; 
+   margin-right: 5px;
+}
+.rank i{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
