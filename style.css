@@ -279,24 +279,129 @@ ul{
 }
 .col{
     background-color: lightblue;
+    /* height:100%; */
 }
 .advertise{
     width:740px;
     height:120px;
     background-color: yellowgreen;
 }
+.advertise img{
+    width:100%;
+    height:100%;
+
+}
+
 .yeonhap{
+    position: relative;
+    border: 1px solid #ebeef3;
     margin-top: 10px;
     width:740px;
-    height:46px;
-    background-color: tomato;
+    height:44px;
+    background-color: #fff;
+    display:flex;
+}
+.yeonhap-news{
+    margin: 15px 0 0 16px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.yeonhap-contents{
+    margin: 12px 0 0 16px;
+}
+.yeonhap-news a{
+    color:#000;
+    margin-right: 5px;
+}
+.yeonhap-contents .item{
+    line-height: 20px;
+}
+.yeonhap-contents a{
+    color:#222;
+    font-size: 12px;
+    font-weight: 600;
+}
+.yeonhap-category{
+    display:flex;
+    width:200px;
+    font-size: 13px;
+    margin:16px 0 0 0;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+.yeonhap-category .item a{
+    color:#666;
+    font-weight: 700;
+    line-height: 16px;
+}
+.yeonhap-category .news{
+    color:#03cf5d;
 }
 .newsstand{
     margin-top: 10px;
     width:740px;
     height:246px;
-    background-color: wheat;
+    background-color: #fff;
+    border: 1px solid #ebeef3;
 }
+.newsstand-menulist{
+    position:relative;
+    height:44px;
+}
+.newsstand-menu{
+    display:flex;
+    width:193px;
+    /* padding-left: 120px; */
+    /* margin-top:13px; */
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-style{
+    display:flex;
+    width:100px;
+    justify-content: space-between;
+}
+.menu-album{
+	background: url('imgs/yeonhap_sprites.png') no-repeat 8.756% 46.154%;
+	width: 18px;
+    height: 17px;
+}
+.menu-inline {
+	background: url('imgs/yeonhap_sprites.png') no-repeat 27.23% 50%;
+	width: 22px;
+    height: 18px;
+    /* margin-left: 8px; */
+}
+.menu-edit {
+	background: url('imgs/yeonhap_sprites.png') no-repeat 46.479% 48.485%;
+	width: 22px;
+    height: 23px;
+}
+.menu-control{
+    display:flex;
+    padding-right: 15px;
+    width:80px;
+    height:44px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.prev-btn {
+	background: url('imgs/yeonhap_sprites.png') no-repeat 71.171% 47.222%;
+	width: 40px;
+    height: 44px;
+    /* border-left:1px solid #ebeef3; */
+}
+.next-btn {
+	background: url('imgs/yeonhap_sprites.png') no-repeat 90.991% 47.222%;
+	width: 40px;
+    height: 44px;
+    /* border-left: 1px solid #ebeef3; */
+}
+
 .weather{
     position: absolute;
     top:140px;
@@ -313,3 +418,4 @@ ul{
     height:151.5px;
     background-color: lightseagreen;
 }
+
