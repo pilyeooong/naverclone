@@ -4,6 +4,9 @@ a{
 ul{
     list-style: none;
 }
+body{
+    font-family:'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
 .search-keyboard {
     position: absolute;
     top:19px;
@@ -278,7 +281,7 @@ ul{
     grid-gap: 10px;
 }
 .col{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     /* height:100%; */
 }
 .advertise{
@@ -289,15 +292,80 @@ ul{
 .advertise img{
     width:100%;
     height:100%;
-
+}
+.account{
+    width:330px;
+    height:118px;
+    /* padding:10px 16px 12px 14px; */
+    border: 1px solid #ebeef3;
+}
+.account-user{
+    background-color: #fff;
+    height:81px;
+    border-bottom: 1px solid #dee3eb;
+}
+.user-thumbnail{
+    padding-left: 10px;
+    width:80px;
+    height:80px;
+    float: left;
+}
+.user-thumbnail img{
+    width:100%;
+    height: 100%;
+}
+.private{
+    font-size: 14px;
+    font-weight: 700;
+    padding:22px 0 0 4px;
+}
+.private-menu{
+    font-size: 12px;
+    vertical-align: top;
+    padding:9px 0 0 10px;
+    color:#888;
+}
+.private-menu{
+    text-decoration: underline;
+}
+.fa-lock{
+    vertical-align: top;
+    padding-left: 5px;
+    font-size: 11px;
+}
+.user-service{
+    padding:6px 0 0 0;
+    font-size: 13px;
+    display:flex;
+    align-items: center; 
+}
+.mailcount, .lettercount{
+    color:#00AB33;
+    margin-right: 5px;
+}
+.lettercount{
+    margin-right: 63px;
+}
+.user-logout{
+    color:#444;
+    font-size: 12px;
+    padding: 0 5px;
+    height:22px;
+    border:1px solid #e5e8ef;
+    line-height: 23px;
+}
+.account-service{
+    height:37px;
+    background-color: #fafafa;
 }
 
 .yeonhap{
     position: relative;
     border: 1px solid #ebeef3;
     margin-top: 10px;
-    width:740px;
-    height:44px;
+    width:738px;
+    /* border속성으로 인한 좌우값 1px씩 추가되어 2px빼주어여함 */
+    height:42px;
     background-color: #fff;
     display:flex;
 }
@@ -326,10 +394,10 @@ ul{
 }
 .yeonhap-category{
     display:flex;
-    width:200px;
+    width:180px;
     font-size: 13px;
     margin:16px 0 0 0;
-    padding-left: 100px;
+    padding-left: 160px;
     justify-content: space-between;
 }
 .yeonhap-category .item a{
@@ -342,26 +410,54 @@ ul{
 }
 .newsstand{
     margin-top: 10px;
-    width:740px;
-    height:246px;
+    width:738px; 
+    /* border속성으로 인한 좌우값 1px씩 추가되어 2px빼주어여함 */
+    height:247px;
     background-color: #fff;
     border: 1px solid #ebeef3;
+}
+.newsstand-title a{
+    color:#000;
+}
+.newsstand-all{
+    position: relative;
+    padding-left: 10px;
+    margin-right: 25px;
+}
+.newsstand-all a{
+    color:#000;
+}
+.newsstand-all::after{
+    content:"";
+    width:1px;
+    position: absolute;
+    top:0;
+    left:103px;
+    height:15px;
+    background-color: #ebeef3;
+}
+.newsstand-mynews a{
+    color:#000;
 }
 .newsstand-menulist{
     position:relative;
     height:44px;
+    display: flex;
+    padding-left: 17px;
+    align-items: center;
+    border-bottom: 1px solid #ebeef3;
 }
 .newsstand-menu{
     display:flex;
-    width:193px;
-    /* padding-left: 120px; */
+    width:210px;
+    padding-left: 264px;
     /* margin-top:13px; */
     justify-content: space-between;
     align-items: center;
 }
 .menu-style{
     display:flex;
-    width:100px;
+    width:110px;
     justify-content: space-between;
 }
 .menu-album{
@@ -382,7 +478,7 @@ ul{
 }
 .menu-control{
     display:flex;
-    padding-right: 15px;
+    padding-right: 14px;
     width:80px;
     height:44px;
     justify-content: space-between;
