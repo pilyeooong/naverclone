@@ -303,6 +303,7 @@ body{
     background-color: #fff;
     height:81px;
     border-bottom: 1px solid #dee3eb;
+    z-index: 100;
 }
 .user-thumbnail{
     padding-left: 10px;
@@ -358,7 +359,36 @@ body{
     height:37px;
     background-color: #fafafa;
 }
+.account-service{
+    display:flex;
+    font-size: 12px;
+    color:#444;
+    text-align: center;
+    /* z-index:1; */
+}
+.service-menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width:312px;
+    align-items: center;
+}
+.service-menu li{
+    /* padding-top: 15px; */
+    height:100%;
+    overflow: hidden;
+    text-align: center;
+    border-right:1px solid #ebeef3;
+}
+.service-menu .item{
+    padding-top: 12px;
+}
+.service-more{
+    padding: 18px 1px 0 0 ;
+    background: url('imgs/yeonhap_sprites.png') no-repeat 90.991% 47.222%;
+	width: 18px;
+    height: 20px;
 
+}
 .yeonhap{
     position: relative;
     border: 1px solid #ebeef3;
@@ -432,7 +462,7 @@ body{
     width:1px;
     position: absolute;
     top:0;
-    left:103px;
+    left:95px;
     height:15px;
     background-color: #ebeef3;
 }
@@ -502,9 +532,80 @@ body{
     position: absolute;
     top:140px;
     right:0px;
-    width:332px;
+    width:330px;
     height: 142px;
-    background-color: lightgray;
+    border: 1px solid #ebeef3;
+    background-color: #fff;
+}
+.weather-header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height:33px;
+    padding-left:15px;    
+    border-bottom: 1px solid #ebeef3;
+}
+.weather-header .date{
+    color: #000;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.weather-header .date::after{
+    position: absolute;
+    top:10px;
+    left:71px;
+    /* right:10px; */
+    content:"";
+    width:1px;
+    height:14px;
+    background-color: #e3e7ee;
+}
+.weather-header .area{
+    color:#888;
+    font-size: 12px;
+    line-height: 16px;
+    /* padding-top: 2px; */
+    padding-left: 11px;
+}
+.weather-header .ordering{
+    font-size: 13px;
+    padding-top: 2px;
+    padding-left: 90px;
+    margin-right: 3px;
+}
+.weather-header .ordering span{
+    color:#888;
+}
+.weather-arrow{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:60px;
+    height:100%;
+    padding-left: 6px;
+}
+.weather-arrow li:nth-child(1){
+    border-left: 1px solid #ebeef3;
+    border-right: 1px solid #ebeef3;
+}
+.arrow-box{
+    width:100%;
+    height:100%;
+    padding-left: 10px;
+}
+.prev-arrow {
+	background: url('imgs/arrow_sprites.png') no-repeat 25.49% 45.455%;
+	width: 9px;
+    height: 100%;
+}
+.next-arrow {
+	background: url('imgs/arrow_sprites.png') no-repeat 72.549% 45.455%;
+	width: 9px;
+    height: 100%;
+}
+.weather-container{
+    height:106px;
 }
 .ad{
     position: absolute;
