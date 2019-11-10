@@ -527,7 +527,38 @@ body{
     height: 44px;
     /* border-left: 1px solid #ebeef3; */
 }
+.newsstand-category{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.newsstand .item{
+    width:122px;
+    height:67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid #ebeef3;
+    border-bottom: 1px solid #ebeef3;
+}
+.newsstand .item:nth-child(6){
+    border-right:none;
+}
+.newsstand .item:nth-child(12){
+    border-right:none;
+}
+.newsstand .item:nth-child(18){
+    border-right:none;
+}
+.newsstand .item:nth-child(n+13){
+    border-bottom: none;
+}
+.newsstand .item img{
+    width:auto;
+    height:24px;
+}
 
+
+/* ------------------------------------------------------- */
 .weather{
     position: absolute;
     top:140px;
@@ -607,12 +638,95 @@ body{
 .weather-container{
     height:106px;
 }
-.ad{
+.weather-content{
+    width:100%;
+    height:56px;
+    padding-top: 5px;
+    display: flex;
+}
+.weather-today{
+    display: flex;
+    
+}
+.weather-image{
+    width:70px;
+    height:70px;
+    padding:0px 0 0 15px;
+    float: left;
+}
+.weather-image img{
+    width:100%;
+    height:100%;
+}
+.weather-temperature{
+    width:60px;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+.current-temperature{
+    font-size: 30px;
+    line-height: 33px;
+    vertical-align: -13px;
+}
+.lowest-temperature{
+    color:#1e96fc;
+    font-size: 14px;
+}
+.highest-temperature{
+    color:#fe1a1a;
+    font-size: 14px;
+}
+.weather-message{
+    padding:17px 0 0 6px;
+}
+.weather-message h3{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.weather-message h4{
+    color:#222;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 9px;
+}
+.dust-average{
+    color:#00ab33;
+}
+.weather-realtime{
+    padding: 18px 0 0 24px;
+    font-size: 12px;
+    
+}
+.weather-realtime a{
+    color:#222;
+}
+.weather-page span{
+    color:#2565D0;
+}
+.weather-weekend span{
+    padding-left: 10px;
+    color:#888888;
+}
+.check-realtime:after{
+    content:"";
+    width:1px;
+    height:12px;
+    position: absolute;
+    left:54%;
+    background-color: #e3e7ee;
+}
+.advertise-side{
     position: absolute;
     top:290px;
     right:0;
-    width:332px;
-    height:151.5px;
-    background-color: lightseagreen;
+    width:330px;
+    height:151px;
+    border:1px solid #ebeef3;
+}
+.advertise-side img{
+    width:100%;
+    height:100%;
 }
 
