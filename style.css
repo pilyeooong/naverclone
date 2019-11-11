@@ -1201,13 +1201,15 @@ footer{
     font-size: 12px;
     border-left: 1px solid #ebeef3;
 }
+.company-download .item div{
+    width:80px;
+}
 .company-download .item:nth-child(2){
     margin-left: 20px;
 }
 .company-download .item img{
     width:50px;
     height:50px;
-    padding-left: 10px;
 }
 .company-download .download{
     color:#888888;
