@@ -1052,14 +1052,14 @@ body{
 .bottom-left{
     width:724px;
     height:110px;
-    padding: 20px 0 0 16px;
+    padding: 20px 0 0 15px;
     background-color: #fff;
 }
 .banner{
     display: flex;
 }
 .bottom-left .banner .item{
-    width:360px;
+    width:359px;
     height:88px;
     display: flex;
 }
@@ -1099,7 +1099,7 @@ body{
     height:88px;
 }
 .bottom-right{
-    width:332px;
+    width:331px;
     height:130px;
     background-color: #fff;
 }
