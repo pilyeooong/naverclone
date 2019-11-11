@@ -1245,8 +1245,10 @@ footer{
     color: #e8e9ec;;
 }
 
-@media screen and(max-width:1900px){
+@media screen and (min-width:1600px){
     .area-search{
+        position: absolute;
+        top:35%;
         left:650px;
     }
 }
