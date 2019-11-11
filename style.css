@@ -177,6 +177,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .search-text{
     margin: 12px 0 0 9px;
     border:0;
