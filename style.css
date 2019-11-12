@@ -7,7 +7,7 @@ ul{
 body{
     font-family:'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
-.search-keyboard {
+/* .search-keyboard {
     position: absolute;
     top:19px;
     left:420px;
@@ -22,7 +22,7 @@ body{
 	background: url('imgs/sp_search.png') no-repeat -87px -60px;
 	width: 9px;
 	height: 4px;
-}
+} */
 
 
 .navbar-mail {
@@ -116,10 +116,11 @@ body{
     position: relative;
     background-color: #f2f4f7;
     height:1966px;
-    width:1440px;
+    /* width:1440px; */
+    /* 1440 이상에서는 레이아웃이 깨질수 있어 추가한 코드 */
 }
 .header{
-    width:1439px;
+    /* width:1439px; */
     background-color: #fff;
     border: 1px solid #d1d8e4;
 }
@@ -131,18 +132,21 @@ body{
     margin: 0 auto;
     width:1080px;
     height:100%;
+    display: flex;
+    align-items: center;
 }
 .area-logo{
-    position: absolute;
-    top:30%;
     background: url('imgs/sp_search.png') no-repeat 50% 10.811%;
     width: 198px;
     height: 48px;
 }
 .area-search{
-    position: absolute;
-    top:35%;
-    left:400px;
+    padding:10px 0 0 20px;
+    display: flex;
+}
+.header-link{
+    height:100%;
+    padding-left: 130px;
 }
 .area-link{
     display:flex;
@@ -163,7 +167,7 @@ body{
 .area-link a:nth-child(1)::after{
     position: absolute;
     top:17px;
-    right:275px;
+    right:280px;
     content:"";
     width:1px;
     height:11px;
@@ -174,33 +178,31 @@ body{
 }
 .search-box{
     border: 2px solid #03cf5d;
-    width:470px;
+    width:474px;
     height:45px;
     display: flex;
     justify-content: center;
 }
-
+.search-box form{
+    display:flex;
+}
 .search-text{
-    margin: 12px 0 0 9px;
+    display: block;
+    padding-top: 15px;
     border:0;
     width:405px;
 }
 .search-btn{
-    position: absolute;
-    top:0;
-    right:-49px;
     width:49px;
     height:49px;
-    border:0;
+    border: 1px solid #03cf5d;
+    padding-left: 13px;
     background-color: #03cf5d;
 }
 .btn-img {
-    position: absolute;
-    top:14px;
-    right:15.5px;
 	background: url('imgs/sp_search.png') no-repeat 2.162% 93.75%;
 	width: 21px;
-	height: 21px;
+    height: 21px;
 }
 
 .header-navbar{
@@ -1249,10 +1251,3 @@ footer{
     color: #e8e9ec;;
 }
 
-@media screen and (min-width:1600px){
-    .area-search{
-        position: absolute;
-        top:35%;
-        left:650px;
-    }
-}
