@@ -116,12 +116,11 @@ body{
     position: relative;
     background-color: #f2f4f7;
     height:1966px;
-    /* width:1440px; */
-    /* 1440 이상에서는 레이아웃이 깨질수 있어 추가한 코드 */
+    min-width: 1440px;
 }
 .header{
-    /* width:1439px; */
     background-color: #fff;
+    min-width:1440px;
     border: 1px solid #d1d8e4;
 }
 .header-area{
@@ -1251,3 +1250,12 @@ footer{
     color: #e8e9ec;;
 }
 
+@media screen and (min-width:1900px){
+    .area-logo{
+        width:215px;
+        height:48px;
+    }
+    .header-link{
+        padding-left: 100px;
+    }
+}
