@@ -116,8 +116,10 @@ body{
     position: relative;
     background-color: #f2f4f7;
     height:1966px;
+    width:1440px;
 }
 .header{
+    width:1439px;
     background-color: #fff;
     border: 1px solid #d1d8e4;
 }
