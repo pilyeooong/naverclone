@@ -250,26 +250,41 @@ body{
 .navbar-rank{
     display:flex;
     width:100%;
+    height:17px;
     justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
 }
 .rank{
+    position: absolute;
+    top:0px;
+    left:135px;
     display: flex;
+    flex-direction: column;
     width:60%;
+    /* height:100%; */
     justify-content: space-around;
     overflow: hidden;
 }
 .rank-item{
     margin-right: 105px;
+    width:100px;
 }
 
 .rank-item span{
+   /* display: block; */
    color: #03cf5d; 
    margin-right: 5px;
 }
 .rank i{
     font-size: 15px;
 }
-
+.navbar-rank ul, li {
+    -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+    -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+    transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+}
+    
 /* ------------------------------------------------------------------------------- */
 
 .container{
