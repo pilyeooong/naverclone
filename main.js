@@ -54,6 +54,10 @@ rankboxrange.addEventListener('mouseover', function(){
     rankbox.style.display = 'block';
 })
 
+rankbox.addEventListener('mouseover', function(){
+    rankbox.style.display = 'block';
+})
+
 rankbox.addEventListener('mouseout', function(){
     rankbox.style.display = 'none';
 })

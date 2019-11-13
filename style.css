@@ -296,6 +296,7 @@ body{
     height:332px;
     background-color: #fff;
     border:1px solid #bec8d8;
+    z-index: 100;
 }
 .rankbox-header{
     padding:16px 16px 0;
