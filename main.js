@@ -47,6 +47,16 @@ function showNews() {
 }
 
 
+var rankboxrange = document.querySelector('.navbar-rank')
+var rankbox = document.querySelector('.rankbox')
+
+rankboxrange.addEventListener('mouseover', function(){
+    rankbox.style.display = 'block';
+})
+
+rankbox.addEventListener('mouseout', function(){
+    rankbox.style.display = 'none';
+})
 
 
 
