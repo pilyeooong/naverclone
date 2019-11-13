@@ -249,11 +249,27 @@ body{
 
 .navbar-rank{
     display:flex;
-    width:100%;
+    width:200px;
     height:17px;
+    padding-left: 145px;
     justify-content: flex-end;
     position: relative;
     overflow: hidden;
+}
+.hoverbox{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:200px;
+    /* background-color: #1e96fc; */
+}
+.hoverbox:hover{
+    display: block;
+    width:200px;
+    height:200px;
+    background-color: #1e96fc;
 }
 .rank{
     position: absolute;
@@ -341,6 +357,7 @@ body{
     font-size: 12px;
     vertical-align: top;
     padding:9px 0 0 10px;
+    font-weight: 500;
     color:#888;
 }
 .private-menu{
@@ -415,17 +432,34 @@ body{
     height:42px;
     background-color: #fff;
     display:flex;
+    align-items: center;
 }
 .yeonhap-news{
-    margin: 15px 0 0 16px;
+    margin: 0 0 0 16px;
     color: #000;
     font-weight: 700;
     letter-spacing: -1px;
     font-size: 14px;
     line-height: 16px;
 }
+.newswrapper{
+    position: relative;
+    overflow: hidden;
+    /* padding-top: 12px; */
+    height:18px;
+}
+.newswrapper ul, li {
+    -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+    -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+    transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+}
 .yeonhap-contents{
-    margin: 12px 0 0 16px;
+    position: relative;
+    margin: 0 0 0 16px;
+    height:20px;
+}
+.news-item{
+    height:18px;
 }
 .yeonhap-news a{
     color:#000;
@@ -443,7 +477,7 @@ body{
     display:flex;
     width:180px;
     font-size: 13px;
-    margin:16px 0 0 0;
+    /* margin:16px 0 0 0; */
     padding-left: 160px;
     justify-content: space-between;
 }

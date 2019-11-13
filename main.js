@@ -1,25 +1,58 @@
-var slideWrapper = document.querySelector('.navbar-rank');
-var slides = document.querySelectorAll('.rank-item');
-var totalSlides = slides.length;
-var sliderHeight = slideWrapper.clientHeight;
-var slideIndex = 0;
+var rankWrapper = document.querySelector('.navbar-rank');
+var rank = document.querySelectorAll('.rank-item');
+var totalRank = rank.length;
+var rankboxHeight = rankWrapper.clientHeight;
+var rankIndex = 0;
 var slider = document.querySelector('.rank');
 
-slider.style.height = sliderHeight * totalSlides + 'px';
+slider.style.height = rankboxHeight * totalRank + 'px';
 
-showSlides();
 
-function showSlides() {
+
+showRanks();
+
+function showRanks() {
     
-    for(var i=0;i<slides.length;i++){
-        slider.style.top = -(sliderHeight * slideIndex) + 'px';    
+    for(var i=0;i<rank.length;i++){
+        slider.style.top = -(rankboxHeight * rankIndex) + 'px';    
     }
-    slideIndex++;
-    if (slideIndex === totalSlides) {
-        slideIndex = 0;
+    rankIndex++;
+    if (rankIndex === totalRank) {
+        rankIndex = 0;
     }
-    setTimeout(showSlides, 2500); 
+    setTimeout(showRanks, 2500); 
 }
+
+var newsWrapper = document.querySelector('.newswrapper');
+var news = document.querySelectorAll('.news-item');
+var totalnews = news.length;
+var newsboxHeight = newsWrapper.clientHeight;
+var newsIndex = 0;
+var newsslider = document.querySelector('.yeonhap-contents');
+
+newsslider.style.height = newsboxHeight * totalnews + 'px';
+
+showNews();
+
+function showNews() {
+    
+    for(var i=0;i<news.length;i++){
+        newsslider.style.top = -(newsboxHeight * newsIndex) + 'px';    
+    }
+    newsIndex++;
+    if (newsIndex === totalnews) {
+        newsIndex = 0;
+    }
+    setTimeout(showNews, 3000); 
+}
+
+
+
+
+
+
+
+
 
 
 
