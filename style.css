@@ -1418,4 +1418,20 @@ footer{
     .header-link{
         padding-left: 85px;
     }
+    .more-service{
+        padding-left: 933px;
+    }
+    .company-download .item div{
+        width:83px;
+    }
+    .newsstand-title h3{
+        display: flex;
+        width: 90px;
+    }
+    .newsstand-all h3{
+        width:90px;
+    }
+    .newsstand-mynews{
+        width:80px;
+    }
 }
