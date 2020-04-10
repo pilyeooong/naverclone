@@ -1,9 +1,9 @@
-var rankWrapper = document.querySelector('.navbar-rank');
-var rank = document.querySelectorAll('.rank-item');
-var totalRank = rank.length;
-var rankboxHeight = rankWrapper.clientHeight;
+var rankWrapper = document.querySelector('.navbar-rank'); // 부모박스
+var rank = document.querySelectorAll('.rank-item'); // 컨텐츠
+var totalRank = rank.length //rank-item의 갯수
+var rankboxHeight = rankWrapper.clientHeight; // rankWrapper의 내부 높이를 픽셀로 반환 -> 17px
 var rankIndex = 0;
-var slider = document.querySelector('.rank');
+var slider = document.querySelector('.rank'); // rank-item을 담고있는 박스
 
 slider.style.height = rankboxHeight * totalRank + 'px';
 
